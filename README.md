@@ -1,1 +1,0 @@
-# IS_herkansing_Sharifa_Jibrilu_Husseini_205
