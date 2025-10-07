@@ -1,1 +1,1 @@
-https://github.com/Sharifa03/writers-blog
+https://sharifa03.github.io/writers-blog/
