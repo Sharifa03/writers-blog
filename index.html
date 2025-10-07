@@ -10,16 +10,18 @@
 
 <body>
     <header>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="episodes.html">Episodes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="story.html">Stories</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section>
+            <!-- sections, ul en li format theorie:https://internetingishard.netlify.app/html-and-css/semantic-html/  -->
             <div>
                 <h1>Come for the stories, stay for the experience.</h1>
                 <p>Welcome to my blog! I'm so glad you're here. This is a space where I'll be sharing my
@@ -31,111 +33,119 @@
                 <a href="episodes.html" class="button">Browse Episodes</a>
                 <a href="contact.html" class="button">Contact Us</a>
             </div>
-            <img class="hero-image" src="img/hero-section-image.jpg" alt="cat with books" width="900" height="500">
+            <img class="hero-image" src="img/hero-section-image.jpg" alt="cat with books">
         </section>
 
         <section>
+            <!-- vormgeving inspiratie: Wattpad https://www.wattpad.com/home -->
             <h2>Top pics for you</h2>
+
             <ul>
-                <li>
-                    <h3>Fantasy</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"></a>
-                    <button>Listen Now</button>
-                </li>
-                <li>
-                    <h3>Science Fiction</h3>
-                    <img src="img/science-finction.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Listen Now</button></a>
+                <li class="book-image">
+                    <h3>SF</h3>
+                    <img src="img/science-finction.jpg" alt="Science Fiction Book Cover">
+                    <a href="episodes.html">read more</a>
                 </li>
                 <li>
                     <h3>Mystery</h3>
-                    <img src="img/mystery-1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Learn more</button></a>
+                    <img src="img/mystery-1.jpg" alt="Mystery book cover">
+                    <a href="episodes.html">read more</a>
                 </li>
                 <li>
                     <h3>Thriller</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Learn more</button></a>
+                    <img src="img/fantasy_1.jpg" alt="Thriller book cover">
+                    <a href="episodes.html">read more</a>
                 </li>
                 <li>
                     <h3>Horror</h3>
-                    <img src="img/horror.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Learn more</button></a>
+                    <img src="img/horror.jpg" alt="Horror book cover">
+                    <a href="episodes.html">read more</a>
                 </li>
                 <li>
                     <h3>Romance</h3>
-                    <img src="img/romance.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Learn more</button></a>
+                    <img src="img/romance.jpg" alt="Romance book cover">
+                    <a href="episodes.html">read more</a>
                 </li>
                 <li>
                     <h3>Historical Fiction</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Learn more</button></a>
+                    <img src="img/fantasy_1.jpg" alt="Historical fiction book cover">
+                    <a href="episodes.html">read more</a>
                 </li>
                 <li>
                     <h3>Contemporary Fiction</h3>
-                    <img src="img/contempory.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Learn more</button></a>
+                    <img src="img/contempory.jpg" alt="Contemporary fiction book cover">
+                    <a href="episodes.html">read more</a>
                 </li>
                 <li>
                     <h3>Urban</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Learn more</button></a>
+                    <img src="img/fantasy_1.jpg" alt="fantasy book cover">
+                    <a href="episodes.html">read more</a>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>new stoeries</h2>
-            <div>
-                <div>
-                    <h3> episode 1: the rise of the AI</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Listen Now</button></a>
-                </div>
-                <div>
-                    <h3> episode 2: the rise of the AI</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Listen Now</button></a>
-                </div>
-                <div>
-                    <h3> episode 3: the rise of the AI</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Listen Now</button></a>
-                </div>
-            </div>
+            <h2>new stories</h2>
+            <ul>
+                <li>
+                    <h3>story title</h3>
+                    <img src="img/contempory.jpg" alt="Episode 1 Cover">
+                    <a href="episodes.html">read more</a>
+                </li>
+                <li>
+                    <h3>story title</h3>
+                    <img src="img/thriller.jpg" alt="Episode 1 Cover">
+                    <a href="episodes.html">read more</a>
+                </li>
+                <li>
+                    <h3>story title</h3>
+                    <img src="img/romance.jpg" alt="Episode 1 Cover">
+                    <a href="episodes.html">read more</a>
+                </li>
+            </ul>
         </section>
 
         <section>
             <h2>continue reading</h2>
-            <div>
-                <div>
-                    <h3> episode 1: the rise of the AI</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Listen Now</button></a>
-                </div>
-                <div>
-                    <h3> episode 2: the rise of the AI</h3>
-                    <img src="img/fantasy_1.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Listen Now</button></a>
-                </div>
-                <div>
-                    <h3> episode 3: the rise of the AI</h3>
-                    <img src="img/thriller.jpg" alt="Episode 1 Cover" width="150" height="200">
-                    <a href="episodes.html"><button>Listen Now</button></a>
-                </div>
-            </div>
+            <ul>
+                <li>
+                    <h3>story title</h3>
+                    <img src="img/mystery.jpg" alt="Episode 1 Cover">
+                    <a href="episodes.html">read more</a>
+                </li>
+                <li>
+                    <h3>story title</h3>
+                    <img src="img/urban.jpg" alt="Episode 1 Cover">
+                    <a href="episodes.html">read more</a>
+                </li>
+                <li>
+                    <h3>story title</h3>
+                    <img src="img/romance.jpg" alt="Episode 1 Cover">
+                    <a href="episodes.html">read more</a>
+                </li>
+            </ul>
         </section>
+
+        <!-- bron: youtube video tutorial en MDN <video> tag opgezocht -->
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video -->
+        <!-- https://www.youtube.com/watch?v=Ki_0iES2cGI -->
+        <div>
+            <video controls>
+            <source src="video/intro.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2023 Cyberpunk Podcast. All rights reserved.</p>
+        <p>reader blog. All rights reserved.</p>
         <p>Follow us on:
-            <a href="https://twitter.com" target="_blank">Twitter</a>,
-            <a href="https://facebook.com" target="_blank">Facebook</a>,
-            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com">Twitter</a>,
+            <a href="https://facebook.com">Facebook</a>,
+            <a href="https://youtube.com">youtube</a>
         </p>
     </footer>
 </body>
+
 </html>

@@ -1,7 +1,11 @@
-/*------------------------------------*/
-/* 1. Base Styles and Typography      */
-/*------------------------------------*/
-/* Global styles for the entire page */
+/* bron: systematische structuur opgezet door chatgpt 
+promt: maak een systematisch gestructureerde css van deze css file van hoog naar laag in de DOM
+2e poging: oke nee maak het nu van algemeen naar specefiek*/
+
+/* flexbox en css styling (voornamelijk voor centreren):https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+/* flexbox positionering oefeningen gedaan met https://flexboxfroggy.com/#nl */
+
+/* 1. BASE & RESET STYLES (Most General) */
 html {
   background-color: #D9BFA0;
 }
@@ -9,166 +13,199 @@ html {
 body {
   font-family: monospace, sans-serif;
   margin: 0;
-  padding: 20px;
-  overflow-x: hidden;
+  padding: 1.5em; 
 }
 
-/* Base text element styling */
-h1 {
-  color: #000000;
-  margin: 1vh;
-  margin-left: 1vh;
-}
-
-h2 {
-  padding-left: 2vh;
-}
-
-h3 {
+h1, h2, h3, p {
   color: #000000;
 }
 
 p {
-  color: #000000;
-  font-size: 16px;
+  font-size: 1em; 
   line-height: 1.5;
+  margin: 2em;
 }
 
-/*------------------------------------*/
-/* 2. Layouts and Main Sections       */
-/*------------------------------------*/
-/* Styles for main structural elements */
+a {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+.hero-image {
+  width: 20em;
+  height: auto;
+  border-radius: 1em;
+} 
+
+
+/* 2. LAYOUT & STRUCTURE (General Containers) */
 header {
   position: relative;
-  background-color: #8C5469;
-  padding: 1vh;
-}
-
-main, div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 footer {
   background-color: #8C5469;
   display: flex;
-  align-items: space-around;
+  align-items: center;
   justify-content: center;
 }
 
-/* Standard section styling */
 section {
   background-color: #A6837B;
-  padding: 2vh;
-  border-radius: 1vh;
-  margin-bottom: 2vh;
+  border-radius: 1em; 
+  
+  padding: 1.5em; 
+  margin-bottom: 1.5em;
   max-width: 100%;
-  overflow: hidden;
+  overflow: auto;
+  scroll-behavior: auto;
 }
 
 div {
-  display: flex;
-  justify-content: flex-end;
-  padding: 2vh;
+display: flex;
+justify-content: center;
 }
 
-
-/*------------------------------------*/
-/* 3. Components                      */
-/*------------------------------------*/
-/* Buttons */
-button {
-  background-color: #F15BB5;
-  color: #FAFAFA;
-  border: 2vh;
-  padding: 1vh;
-  margin: 2vh;
-  border-radius: 1vh;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-/* Images */
-img {
-  border-radius: 1vh;
-  filter: drop-shadow(5px 5px 4px #030711);
-}
-
-/* Standard div styling */
-section > div {
-  margin: 1vh;
-  padding: 1vh;
-  background-color: #A6837B;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-}
-
-/* Inner divs within sections */
-section > div > div {
-  background-color:#8C5469;
-  color: white;
-  margin: 2vh;
-  padding: 2vh;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/*------------------------------------*/
-/* 4. Navigation and Lists            */
-/*------------------------------------*/
 /* Main navigation bar (ul) */
+
 ul {
-  display: flex;
-  background-color: #ffffff;
-  padding: 1vw;
+  background-color: #A6837B;
   border-radius: 1vw;
+  
+  display: flex;
   justify-content: space-around;
   align-items: center;
+  
   margin: 1vw;
+  overflow: auto;
+
   list-style: none;
 }
 
-/* Specific list styles for the "hottest originals" section */
-:nth-of-type(2) ul {
-  max-width: 100%;
+
+
+/* 3. TYPOGRAPHY & INTERACTION (Element Specifics) */
+
+h1 {
+  margin: 1em; 
+  margin-left: 1em;
+}
+
+h2 {
   display: flex;
-  list-style-type: none;
-  overflow-x: scroll;
-  scroll-snap-type: mandatory;
+  justify-content: center;
+  padding-left: 1.5em; 
 }
 
-:nth-of-type(2) ul,
-li {
-  flex-shrink: 100;
-  width: calc(110% / 2);
-  max-width: 100%;
-  padding: 4vh;
+em {
+  font-style: normal;
+  font-weight: bold;
 }
 
-/*------------------------------------*/
-/* 5. Specific Sections               */
-/*------------------------------------*/
-/* Styles for the "epic stories" section */
-section:first-of-type {
-  margin: 1vh;
-  padding: 1vh;
-  background-color: #D9BFA0;
+button {
+  background-color: #F15BB5;
+  color: #FAFAFA;
+  border: none; 
+  padding: 1em; 
+  margin: 1.5em; 
+  border-radius: 1em; 
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #9B1C5D;
+  color: #FFFFFF;
+}
+
+a:hover {
+  background: #131313;
+  color: #F15BB5;
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+
+
+/* 4. COMPONENTS & SPECIFIC LAYOUTS (High Specificity) */
+
+/*--- Images and Media ---*/
+img {
+  border-radius: 1em;
+  filter: drop-shadow(5px 5px 4px #030711);
+  width: 10em;
+  height: 16em;
+  border-radius: 1em;
+}
+
+video {
+  width: 30em;
+  border-radius: 1em;
+  margin-top: 1.5em;
+  padding-bottom: 1em;
+
   display: flex;
   flex-direction: row;
+  }
+
+section a {
+  background-color: #F15BB5;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+
+/*--- Layout Specificity (Containers) ---*/
+
+section ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+section > div {
+  background-color: #8C5469;
+  border-radius: 5px;
+  align-items: center;
+  margin: 1em; 
 }
 
 
-/* Nested div inside the first section */
+
+/*--- Section Specific Overrides ---*/
+
+/* FIRST SECTION: Specific styles for the top/first section */
+section:first-of-type {
+  background-color: #D9BFA0;
+  
+  /* Layout */
+  display: flex;
+  flex-direction: row;
+  
+  margin: 0.8em;
+  padding: 0.8em; 
+}
+
 section:first-of-type div {
-  padding: 1vh;
-  margin: 1vh;
   background-color: #c49a8a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding: 0.8em; 
+  margin: 0.8em; 
 }
+
+section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul:nth-of-type(2) {
+  max-width: 100%;
+  display: flex;
+  overflow-x: scroll;
+
+}
+
